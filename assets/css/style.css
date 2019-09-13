@@ -1,17 +1,17 @@
 .ios {
     display: none;
 }
-label {
+.label {
     display: inline-block;
     border: 1px solid #d9d9d9;
     border-radius: 16px;
     width: 50px;
     height: 26px;
 }
-label {
+.label {
     position: relative;
 }
-label:after {
+.label:after {
     content: "";
     position: absolute;
     display: block;
@@ -24,14 +24,14 @@ label:after {
     border: 1px solid #d9d9d9;
     transition: all 0.3s;
 }
-label:hover:after {
+.label:hover:after {
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
-.ios:checked + label {
+.ios:checked + .label {
     background-color: #55D069;
     transition: 0.8s;
 }
-.ios:checked + label:after {
+.ios:checked + .label:after {
     left: 26px;
 }
 
